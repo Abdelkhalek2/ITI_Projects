@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEAD -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is my portfolio page project.">
+        <link rel="icon" type="image/x-icon" href="./assets/images/fav.png">
+        <title>My Portfolio Page Project</title>
+    </head>
+    <body>
+        <!----HEADER & NAVIGATION---->
+        <header>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h2>Abdulkhaleq</h2>
+                        </td>
+                        <td>
+                            <nav>
+                                &nbsp;&nbsp;<a href="#about">About</a>
+                                &nbsp;&nbsp;<a href="#skills">Skills</a>
+                                &nbsp;&nbsp;<a href="#contact">Contact</a>
+                            </nav>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </header>
+        <main>
+            <!-- 3) قسم Hero / About -->
+            <section id="about">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>Hi, I'm Abdulkhaleq. I'm a web developer. and student of ITI. and I'm passionate about creating beautiful and functional websites. and I love to learn new technologies and improve my skills.</p>
+                    <img src="./assets/images/about.png" alt="Profile Picture" width="800">
+            </section>
+            <!-- 4) قسم Skills -->
+            <section id="skills">
+                <h2>My Skills</h2>
+                    <ul>
+                        <li>web design</li>
+                        <li>Problem solving</li>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Leadership</li>
+                    </ul>
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ol>
+                    <p>I'm always looking to <strong>improve my skills</strong> and learn <em>new technologies</em>. I'm currently learning <mark>new technologies</mark>. I'm also interested in learning more about web design and user experience.</p>
+            </section>
+            <!-- 5) جدول (My Courses) -->
+            <section>
+                <table border="1" style="text-align: center;" width="500">
+                    <caption><strong>My Courses</strong></caption>
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>The period</th>
+                            <th>status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Front-End Development</td>
+                            <td>3 months</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>Back-End Development</td>
+                            <td>3 months</td>
+                            <td>In Progress</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">This is my portfolio page project.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <!-- 6) قسم Gallery مصغر -->
+            <section>
+                <h2>Gallery</h2>
+                <figure>
+                        <img src="./assets/images/HTML.webp" alt="HTML">
+                        <figcaption>HTML is the standard markup language for creating web pages.</figcaption>
+                </figure> 
+                <figure>
+                        <img src="./assets/images/css.webp" alt="CSS">
+                        <figcaption>CSS is the language used for styling web pages.</figcaption>
+                </figure> 
+                <figure>
+                        <img src="./assets/images/javascript.jpg" alt="JavaScript">
+                        <figcaption>JavaScript is a programming language that is used to create interactive web pages.</figcaption>
+                </figure> 
+            </section>
+            <!-- 7) قسم Contact Form -->
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form>
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label for="name">Name:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="name" id="name" required placeholder="Enter your name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="email">Email:</label></td>
+                                    <td><input type="email" name="email" id="email" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="phone">Phone:</label></td>
+                                    <td><input type="tel" name="phone" id="phone"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="date">Birth Date:</label></td>
+                                    <td><input type="date" name="date" id="date"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                            <label for="message">Message:</label>
+                            <br>
+                            <textarea name="message" id="message" rows="5" cols="40"></textarea>
+                            <br>
+                            <label for="subject">Subject:</label>
+                            <select name="subject" id="subject">
+                                <option value="web">web development</option>
+                                <option value="design">web design</option>
+                                <option value="responsive">responsive design</option>
+                            </select>
+                            <br>
+                            <label>How do you want to be contacted?</label>
+                            <br>
+                            <input type="radio" name="how contact" id="Email" value="email">
+                            <label for="Email">Email</label>
+                            <input type="radio" name="how contact" id="Phone" value="phone">
+                            <label for="Phone">Phone</label>
+                            <br>
+                            <input type="checkbox" name="Accept Terms" id="AcceptTerms">
+                            <label for="AcceptTerms">I accept the terms and conditions</label>
+                            <br>
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="reset">
+                    </fieldset>
+                </form>
+            </section>
+            <!-- 8) قسم FAQ -->
+            <section>
+                <h2>FAQ</h2>
+                <details>
+                    <summary>What is your name?</summary>
+                    <p>My name is Abdulkhaleq.</p>
+                </details>
+                <details>
+                    <summary>What is your profession?</summary>
+                    <p>I am a web developer.</p>
+                </details>
+                <details>
+                    <summary>What are your skills?</summary>
+                    <p>My skills include web design, problem solving, communication, teamwork, and leadership.</p>
+                </details>
+            </section>
+            <!-- 9) Footer -->
+            <footer>
+                <p>Contact Information:</p>
+                <address>
+                    <p>Email: <a href="mailto:mohamedboody730@gmail.com">mohamedboody730@gmail.com</a></p>
+                </address>
+                <p>&copy; 2026 Abdulkhaleq. All rights reserved.</p>
+                <p>
+                    <a href="https://www.facebook.com/abdulkhaleq" target="_blank">Facebook</a> |
+                    <a href="https://www.twitter.com/abdulkhaleq" target="_blank">Twitter</a> |
+                    <a href="https://www.linkedin.com/in/abdulkhaleq" target="_blank">LinkedIn</a>
+                </p>
+            </footer>
+        </main>
+    </body>
+</html>
