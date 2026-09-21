@@ -1,0 +1,90 @@
+:root {
+    --primary-color:violet;
+    --secondary-color: #3b82f6;
+    --bg-color: #f8fafc;
+    --text-color: #333333;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    height: 8vh;
+    text-align: center;
+}
+nav a {
+    color: var(--bg-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 2vw;
+}
+nav a:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+h2, h3 {
+    color: var(--primary-color);
+    text-align: center;
+}
+#about {
+    text-align: center;
+}
+#about img {
+    background: var(--primary-color) url(../assets/images/my_image.webp) no-repeat fixed center;
+    background-size: cover;
+    color: var(--bg-color);
+    width: 200px;
+    height: 200px;
+}
+.skills-container{
+    --locale-bg-color:teal;
+    background-color: var(--locale-bg-color);
+    width:50%;
+    max-width: 400px;
+    height: 100px;
+    min-height: 50px;
+    /* لو طوله اكبر من 100px يبقي overflow: auto; 
+    لو اقل يبقي overflow:hidden; */
+    overflow: auto;
+    margin: 20px auto;
+    font-size: 1.2em;
+}
+.skills-container > ul {
+    cursor: help;
+    text-align: center;
+}
+#contact {
+    text-align: center;
+}
+.contact-container {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    width: 50%;
+    margin: 20px auto;
+}
+.contact-button {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+#contact .contact-button {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+.contact-button:hover {
+    /* هنا ده ليه الاولويه */
+    background-color: red !important;
+    cursor:not-allowed;
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 20px;
+}
