@@ -1,0 +1,73 @@
+:root{
+    --primary-color: #471402;
+    --secondary-color: #c77552;
+    --bg-color: rgb(224, 220, 211);
+    --text-color: #361c1c;
+    --border-color: #C29D90;
+    --my-font: 'Idiqlat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Idiqlat';
+    src: url('../fonts/Idiqlat-Regular.ttf');
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--my-font);
+}
+#card{
+    background-color: #ffff;
+    width:60%;
+    text-align: center;
+    margin: 20px auto;
+    padding: 30px;
+    border: 10px dashed var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px var(--border-color);
+}
+h1{
+    font-family: var(--my-font);
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: ExtraBold;
+    margin: 20px 0;
+}
+.profile-image{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border:  5px dashed var(--border-color);
+}
+.job-title{
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin: 10px 0;
+}
+.bio{
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 30px;
+}
+.card-btn{
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.card-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
