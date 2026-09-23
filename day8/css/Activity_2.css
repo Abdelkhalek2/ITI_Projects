@@ -1,0 +1,13 @@
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: #461515;
+    transition-duration: 0.5s;
+    transition-property: margin, width;
+    transition-delay: 0.5s;
+}
+.container:hover {
+    background-color: #e0e0e0;
+    margin: 0 50px;
+    width: 500px;
+}
