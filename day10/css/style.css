@@ -1,0 +1,254 @@
+:root{
+    --primary-color: white;
+    --hover-color: #eb8b8b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: serif;
+    font-size: 16px;
+}
+/* ده الأب للسكشن الأول */
+#hero{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+/*  ده الاب للناف بار اللي فيه اللينكات واللوجو */
+.nav{
+    display: flex;               /* عشان نخلي اللينكات واللوجو جنب بعض */
+    flex-flow: row nowrap;      /* عشان نخلي اللينكات واللوجو جنب بعض وميتكسروش */
+    align-items: center;        /* عشان نخلي اللينكات واللوجو في النص عموديا */
+    justify-content: space-evenly;            /*  هو بيبدا يقسم العناصر بشكل متساوي */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+.logo img{
+    width: 150px;
+    cursor: pointer;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-links a:hover{
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+.hero-text{
+    width: 50%;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+}    
+span{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--primary-color);
+    display: inline-block; 
+}
+.hero-title{
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.hero-subtitle{
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.hero-buttons a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.learn-btn{
+    background-color: #8D7754;
+    padding: 13px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.learn-btn:hover{
+    background-color: var(--hover-color);
+}
+.contact-btn{
+    background-color:none;
+    border: 2px solid var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.contact-btn:hover{
+    background-color: var(--hover-color);
+}
+/* ده الأب للسكشن التاني اللي بيشكل> About */
+#about{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 50px auto;
+    gap: 50px;
+}
+.about-image{
+    width: 300px;
+    height: 300px;   
+}
+.about-title{
+    font-size:20px; 
+    margin-bottom: 20px;
+}
+.about-description{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.about-list-items{
+    list-style-type: none;
+}
+#Our-location{
+    background-color: #F8F8F8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px auto;
+    margin: 40px auto;
+}
+.location-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.location-container h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #303030
+}
+.location-text{
+    margin-bottom: 20px;
+    text-align: left;
+    color: #303030;
+    flex: 1.5;
+}
+.location-image{
+    flex: 1;
+}
+.location-text p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.location-image img{
+    width: 100%;
+    height: auto;
+}
+#our-baking{
+    background-color: white;
+    padding: 80px 0;
+    width: 100%;
+    margin: auto;
+}
+.baking-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.baking-header h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #303030
+}
+.baking-header p{
+    font-size: 16px;
+}
+.baking-card{
+    text-align: center;
+}
+.baking-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: auto;
+    align-content: center;
+    gap: 30px;
+}
+.baking-card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.baking-card h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.baking-card p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .location-container,
+    .baking-grid {
+        width: 95%;
+    }
+}
+@media only screen  and(min-width:768) and (max-width: 992px) {
+    .baking-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #about {
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .baking-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav,
+    #about,
+    .location-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .location-text {
+        text-align: center;
+    }
+    .hero-text {
+        width: 90%;
+    }
+}
